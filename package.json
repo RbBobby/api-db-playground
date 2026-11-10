@@ -1,0 +1,9 @@
+{
+  "name": "api-db-playground-ui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/frontend.test.mjs",
+    "check": "node --check app/static/app.js && node --check app/static/utils.js"
+  }
+}

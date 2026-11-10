@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151d31">
+  <title>Практикум — тестовый магазин</title>
+  <link rel="icon" href="/ui/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/ui/styles.css">
+  <script type="module" src="/ui/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <aside class="sidebar">
+    <a class="brand" href="#catalog" aria-label="Практикум, каталог"><span class="brand-symbol">п.</span><span>практикум<span class="brand-caption">ТЕСТОВЫЙ МАГАЗИН</span></span></a>
+    <div class="workspace-label">РАБОЧЕЕ ПРОСТРАНСТВО</div>
+    <nav id="navigation" aria-label="Основная навигация"></nav>
+    <div class="sidebar-bottom"><div class="environment"><span class="dot"></span> Учебная среда <span class="mono">LOCAL</span></div><a href="/docs" target="_blank" rel="noopener">Открыть Swagger <span aria-hidden="true">↗</span></a><p>Действие в интерфейсе —<br>реальные данные в PostgreSQL.</p></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">Рабочее пространство <span>/</span> <strong id="breadcrumb">Каталог</strong></div><div class="connection" id="connection" role="status"><span class="dot pending"></span> Подключение…</div></header>
+    <main id="main" tabindex="-1"><div id="page"></div><section class="request-journal" aria-labelledby="journal-title"><div class="section-heading"><div><h2 id="journal-title">Журнал запросов <span id="journal-count" class="count">0</span></h2><p>Запрос, ответ и результат каждого действия</p></div><button class="text-button" id="clear-journal">Очистить</button></div><div id="journal"></div></section></main>
+    <footer class="footer"><span>Практикум <span class="muted">/</span> API + PostgreSQL</span><span>Учитесь на реальных действиях.</span></footer>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript>Для работы учебного магазина включите JavaScript в браузере.</noscript>
+</body>
+</html>
